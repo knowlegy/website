@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus {
+      border-color: #6c63ff;
+      outline: none;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #6c63ff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #574fd6;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+      <button type="submit" class="login-btn">Sign In</button>
+    </form>
+    <div class="footer">
+      &copy; 2025 Your Company
+    </div>
+  </div>
+
+</body>
+</html>
